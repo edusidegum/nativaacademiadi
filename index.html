@@ -3,32 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- SEO: indexável, canonical delegado para nativa.html -->
   <title>N'ativa Academia — Musculação, Natação e Hidroginástica | Dois Irmãos RS</title>
-  <meta name="description" content="Musculação, Hidroginástica e Natação Adulto e Infantil em Dois Irmãos RS. Estrutura completa, matrícula grátis e benefícios exclusivos. Entre em contato!">
+  <meta name="description" content="Página oficial da N'ativa Academia em Dois Irmãos. Musculação, Natação e Hidroginástica. Em breve, novo portal completo.">
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-  <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
   <link rel="canonical" href="https://edusidegum.github.io/nativaacademiadi/nativa.html">
 
-  <!-- Open Graph -->
+  <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="N'ativa Academia — Musculação, Natação e Hidroginástica | Dois Irmãos RS">
-  <meta property="og:description" content="Estrutura completa, matrícula grátis. Musculação, Hidroginástica e Natação Adulto e Infantil em Dois Irmãos RS.">
   <meta property="og:url" content="https://edusidegum.github.io/nativaacademiadi/nativa.html">
-  <meta property="og:image" content="https://edusidegum.github.io/nativaacademiadi/img/fachada.webp">
+  <meta property="og:title" content="N'ativa Academia — Musculação, Natação e Hidroginástica">
+  <meta property="og:description" content="Estrutura completa em Dois Irmãos RS. Musculação, Natação e Hidroginástica.">
+  <meta property="og:image" content="https://edusidegum.github.io/nativaacademiadi/img/logonativa.webp">
   <meta property="og:locale" content="pt_BR">
 
-  <!-- Twitter Card -->
+  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="N'ativa Academia — Musculação, Natação e Hidroginástica | Dois Irmãos RS">
-  <meta name="twitter:description" content="Estrutura completa, matrícula grátis. Musculação, Hidroginástica e Natação Adulto e Infantil em Dois Irmãos RS.">
-  <meta name="twitter:image" content="https://edusidegum.github.io/nativaacademiadi/img/fachada.webp">
+  <meta name="twitter:title" content="N'ativa Academia — Musculação, Natação e Hidroginástica">
+  <meta name="twitter:image" content="https://edusidegum.github.io/nativaacademiadi/img/logonativa.webp">
 
-  <!-- Preload da imagem LCP -->
-  <link rel="preload" as="image" href="obras.webp" fetchpriority="high">
+  <link rel="preload" as="image" href="img/piscina.gif" fetchpriority="high">
 
-  <!-- JSON-LD: @graph com @id consistentes (Padrão Ouro Vs4) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -38,21 +32,12 @@
         "@id": "https://edusidegum.github.io/nativaacademiadi/#business",
         "name": "N'ativa Academia",
         "url": "https://edusidegum.github.io/nativaacademiadi/nativa.html",
-        "description": "Musculação, Hidroginástica e Natação Adulto e Infantil em Dois Irmãos RS.",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "R. São Leopoldo, 988",
-          "addressLocality": "Dois Irmãos",
-          "addressRegion": "RS",
-          "addressCountry": "BR"
-        },
-        "sameAs": ["https://www.instagram.com/nativaacademiadi/"],
+        "logo": "https://edusidegum.github.io/nativaacademiadi/img/logonativa.webp",
         "founder": {
           "@type": "Person",
           "@id": "https://edusidegum.github.io/edusidegum/#person",
           "name": "Edu Sidegum",
-          "url": "https://edusidegum.github.io/edusidegum/",
-          "jobTitle": "Arquiteto de Soluções Digitais"
+          "url": "https://edusidegum.github.io/edusidegum/"
         }
       },
       {
@@ -61,80 +46,156 @@
         "url": "https://edusidegum.github.io/nativaacademiadi/index.html",
         "name": "N'ativa Academia — Em Obras",
         "isPartOf": { "@id": "https://edusidegum.github.io/nativaacademiadi/#business" },
-        "inLanguage": "pt-BR",
-        "description": "Página de entrada — redirecionamento ao Instagram. Site oficial em nativa.html"
+        "inLanguage": "pt-BR"
       }
     ]
   }
   </script>
 
   <style>
+    :root {
+      --bg-gradient: linear-gradient(135deg, #1a0a3e 0%, #1e1a5e 25%, #283593 50%, #1a237e 75%, #0d1442 100%);
+      --glass: rgba(255, 255, 255, 0.06);
+      --glass-border: rgba(255, 255, 255, 0.12);
+      --teal-gradient: linear-gradient(135deg, #26a69a 0%, #00897b 100%);
+    }
+
     * { margin: 0; padding: 0; box-sizing: border-box; }
+
     body {
-      background: #f5f5f5;
+      min-height: 100vh;
       display: flex;
       align-items: center;
       justify-content: center;
-      min-height: 100vh;
-      font-family: 'Segoe UI', system-ui, sans-serif;
-      text-align: center;
-      flex-direction: column;
+      font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      color: #ffffff;
+      overflow: hidden;
+      position: relative;
     }
-    .container { max-width: 520px; padding: 2rem; }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0; width: 100%; height: 100%;
+      background: var(--bg-gradient);
+      background-attachment: fixed;
+      z-index: -2;
+    }
+
+    .parallax-layer {
+      position: absolute;
+      top: -10%; left: 0; width: 100%; height: 120%;
+      background-image: radial-gradient(circle, rgba(255,255,255,0.05) 1px, transparent 1px);
+      background-size: 50px 50px;
+      z-index: -1;
+      animation: parallaxAnim 20s ease-in-out infinite alternate;
+    }
+
+    @keyframes parallaxAnim {
+      from { transform: translateY(0); }
+      to { transform: translateY(-5%); }
+    }
+
+    .container {
+      max-width: 540px;
+      width: 90%;
+      padding: 3rem 2rem;
+      background: var(--glass);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-radius: 24px;
+      border: 1px solid var(--glass-border);
+      text-align: center;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    }
+
     .container img {
       max-width: 100%;
       height: auto;
-      margin-bottom: 1.5rem;
+      border-radius: 16px;
+      margin-bottom: 2rem;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.3);
     }
+
     .countdown {
       font-size: 1.1rem;
-      color: #555;
-      margin-bottom: 1rem;
+      margin-bottom: 2rem;
+      color: #c5cae9;
     }
-    .countdown strong { color: #e63946; font-size: 1.3rem; }
+
+    #timer {
+      font-weight: 700;
+      color: #4db6ac;
+      font-size: 1.4rem;
+    }
+
     .destaque {
       display: inline-block;
-      margin-top: 1rem;
-      padding: 0.75rem 1.5rem;
-      background: #2a9d8f;
-      color: #fff;
+      padding: 1rem 2rem;
+      background: var(--teal-gradient);
+      color: white;
       text-decoration: none;
-      border-radius: 6px;
-      font-weight: bold;
-      font-size: 1rem;
+      border-radius: 50px;
+      font-weight: 600;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      margin-bottom: 2rem;
     }
+
+    .destaque:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px rgba(0, 137, 123, 0.3);
+    }
+
+    .destaque:focus-visible {
+      outline: 3px solid #80cbc4;
+      outline-offset: 2px;
+    }
+
     .credito {
-      margin-top: 2rem;
-      font-size: 0.8rem;
-      color: #999;
+      font-size: 0.85rem;
+      opacity: 0.6;
+      transition: opacity 0.3s ease;
     }
-    .credito a { color: #999; }
+
+    .credito:hover { opacity: 1; }
+
+    .credito a {
+      color: inherit;
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
-  <div class="container">
-    <img src="obras.webp" alt="Pagina em construcao — N'ativa Academia" width="480" height="360" fetchpriority="high">
+  <div class="parallax-layer"></div>
+
+  <main class="container">
+    <img src="img/piscina.gif" alt="Piscina da N'ativa Academia" width="480" height="320" fetchpriority="high">
+
     <p class="countdown">
-      Voce sera redirecionado ao Instagram em <strong id="timer">8</strong> segundos
+      Voce sera redirecionado ao Instagram em <span id="timer">8</span> segundos
     </p>
-    <a class="destaque" href="nativa.html">
+
+    <a href="nativa.html" class="destaque">
       Conheca a N'ativa Academia — Site Oficial
     </a>
+
     <p class="credito">
-      Projeto digital por <a href="https://edusidegum.github.io/edusidegum/" rel="author">Edu Sidegum — Arquiteto de Solucoes Digitais</a>
+      Projeto digital por <a href="https://edusidegum.github.io/edusidegum/" rel="author">Edu Sidegum</a>
     </p>
-  </div>
+  </main>
 
   <script>
     (function() {
-      var segundos = 8;
-      var timerEl = document.getElementById('timer');
-      var intervalo = setInterval(function() {
-        segundos--;
-        timerEl.textContent = segundos;
-        if (segundos <= 0) {
-          clearInterval(intervalo);
-          window.location.href = 'https://www.instagram.com/nativaacademiadi/';
+      var count = 8;
+      var timerDisplay = document.getElementById('timer');
+      if (!timerDisplay) return;
+
+      var countdownInterval = setInterval(function() {
+        count--;
+        timerDisplay.textContent = count;
+        if (count <= 0) {
+          clearInterval(countdownInterval);
+          window.location.href = "https://www.instagram.com/nativaacademiadi/";
         }
       }, 1000);
     })();
