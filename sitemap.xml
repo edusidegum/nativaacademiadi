@@ -1,40 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xhtml="http://www.w3.org/1999/xhtml"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-
-  <url>
-    <loc>https://edusidegum.github.io/nativaacademia/</loc>
-    <lastmod>2026-07-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://edusidegum.github.io/nativaacademia/"/>
-
-    <!-- Imagens principais para indexação -->
-    <image:image>
-      <image:loc>https://edusidegum.github.io/nativaacademia/assets/fachada-nativa.webp</image:loc>
-      <image:title>Fachada N'ativa Academia</image:title>
-      <image:caption>Entrada da N'ativa Academia — Canoas/RS</image:caption>
-    </image:image>
-
-    <image:image>
-      <image:loc>https://edusidegum.github.io/nativaacademia/assets/interior-nativa.webp</image:loc>
-      <image:title>Interior N'ativa Academia</image:title>
-      <image:caption>Espaço interno com equipamentos modernos</image:caption>
-    </image:image>
-
-    <image:image>
-      <image:loc>https://edusidegum.github.io/nativaacademia/assets/aula-coletiva.webp</image:loc>
-      <image:title>Aulas Coletivas — N'ativa Academia</image:title>
-      <image:caption>Espaço dedicado para aulas coletivas</image:caption>
-    </image:image>
-
-    <image:image>
-      <image:loc>https://edusidegum.github.io/nativaacademia/assets/musculacao-nativa.webp</image:loc>
-      <image:title>Musculação — N'ativa Academia</image:title>
-      <image:caption>Área de musculação completa</image:caption>
-    </image:image>
-
-  </url>
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://edusidegum.github.io/nativaacademiadi/</loc><lastmod>2026-07-29</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://edusidegum.github.io/nativaacademiadi/nativa.html</loc><lastmod>2026-07-29</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://edusidegum.github.io/nativaacademiadi/privacidade.html</loc><lastmod>2026-07-29</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
 </urlset>
